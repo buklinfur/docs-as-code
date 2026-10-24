@@ -1,0 +1,46 @@
+site_name: Docs as Code
+
+theme:
+  name: material
+
+  language: ru
+  
+  palette:
+    - scheme: slate
+      primary: black
+      accent: lime
+      toggle:
+        icon: material/weather-night
+        name: Включить светлую матрицу
+    - scheme: default
+      primary: deep purple
+      accent: deep orange
+      toggle:
+        icon: material/weather-sunny
+        name: Вернуться в киберпанк
+
+  features:
+    - navigation.instant        
+    - navigation.tabs           
+    - navigation.tabs.sticky   
+    - navigation.top            
+    - search.suggest            
+    - search.highlight          
+    - content.code.copy  
+
+extra_css:
+  - stylesheets/cyberpunk.css       
+
+markdown_extensions:
+  - admonition
+  - def_list
+  - pymdownx.caret
+  - pymdownx.keys             
+  - pymdownx.mark             
+  - pymdownx.details           
+  - pymdownx.superfences       
+  - pymdownx.tabbed:           
+      alternate_style: true
+  - pymdownx.emoji:            
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg

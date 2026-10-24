@@ -1,0 +1,30 @@
+:root [data-md-color-scheme="slate"] {
+    --md-primary-fg-color: #0d0e15;
+    --md-accent-fg-color: #00ff66; 
+    --md-text-link-color: #00f0ff; 
+}
+
+.md-header {
+    border-bottom: 2px solid var(--md-accent-fg-color);
+    box-shadow: 0 0 15px rgba(0, 255, 102, 0.3);
+}
+
+code, kbd {
+    font-family: 'Courier New', Courier, monospace !important;
+    background-color: #1a1c23 !important;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #0d0e15;
+}
+::-webkit-scrollbar-thumb {
+    background: #3f51b5;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--md-accent-fg-color);
+    box-shadow: 0 0 10px var(--md-accent-fg-color);
+}
